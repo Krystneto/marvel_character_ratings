@@ -1,0 +1,32 @@
+{
+    "characters": [
+        {
+            "id": "1",
+            "name": "Adam Warlock",
+            "gender": "Male",
+            "status": "Hero",
+            "attributes": {
+                "intelligence": "1",
+                "strength": "1",
+                "speed": "1",
+                "durability": "1",
+                "energyProjection": "1",
+                "fightingAblitiy": "1"
+            }
+        },
+        {
+            "id": "2",
+            "name": "Archangel",
+            "gender": "Male",
+            "status": "Hero",
+            "attributes": {
+                "intelligence": "1",
+                "strength": "1",
+                "speed": "1",
+                "durability": "1",
+                "energyProjection": "1",
+                "fightingAblitiy": "1"
+            }
+        }
+    ]
+}

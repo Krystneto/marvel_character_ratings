@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Character } from '../shared/character.model';
-
+import { CharacterService } from '../character.service'; 
 
 const characters = [
   {
@@ -47,10 +47,15 @@ export class CharactersComponent implements OnInit {
 
   characters: Character[] = characters;
 
-  constructor() { }
+  constructor(private characterService: CharacterService) { }
 
   ngOnInit() {
+    this.getCharacters()
   }
-
+  
+  getCharacters(): void {
+    this.characterService.getCharacters()
+      .then(characters => this.characters = characters )
+  }
   
 }

@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
 
+import { CharacterService } from './character.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,7 @@ import { CharactersComponent } from './characters/characters.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CharacterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
